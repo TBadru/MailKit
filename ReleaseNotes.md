@@ -1,5 +1,17 @@
 # Release Notes
 
+## MailKit 4.17.0 (2026-05-26)
+
+* Updated nullability of ImapClient.Inbox (which will never return null).
+  (issue [#1996](https://github.com/jstedfast/MailKit/issues/1996))
+* Fixed IMAP's logic for ACL, LISTRIGHTS, MYRIGHTS, QUOTAROOT, QUOTA,
+  and METADATA response parsers to properly handle []'s in the folder name.
+  (issue [#2002](https://github.com/jstedfast/MailKit/issues/2002))
+* Updated System.Threading.Tasks.Extensions to v4.6.3.
+* Updated System.Formats.Asn1 to v10.0.0 (instead of 10.0.2) for .NET 10.
+* Bumped MimeKit dependency to 4.17.0.
+* Code quality improvements.
+
 ## MailKit 4.16.0 (2026-04-15)
 
 * SECURITY: Fixed protocol streams to reset internal buffers after upgrading to SSL/TLS.
@@ -7,6 +19,7 @@
   (issue [#1989](https://github.com/jstedfast/MailKit/issues/1989))
 * Fixed calculation for number of needed bytes in SOCKS5 connect response.
   (issue [#1993](https://github.com/jstedfast/MailKit/issues/1993))
+* Bumped MimeKit dependency to 4.16.0.
 
 ## MailKit 4.15.1 (2026-03-04)
 
